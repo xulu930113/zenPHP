@@ -1,0 +1,12 @@
+{
+  "name": "zenphp/zenphp",
+  "description": "The zenphp Framework.",
+  "require": {
+  },
+  "autoload": {
+    "classmap": ["database"],
+    "psr-4": {
+      "zenphp\\": "zenphp/"
+    }
+  }
+}
