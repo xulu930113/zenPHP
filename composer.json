@@ -1,12 +1,14 @@
 {
-  "name": "zenphp/zenphp",
-  "description": "The zenphp Framework.",
-  "require": {
-  },
-  "autoload": {
-    "classmap": ["database"],
-    "psr-4": {
-      "zenphp\\": "zenphp/"
-    }
-  }
+    "name": "zenkn/zenphp",
+    "description": "The zenphp Framework.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shaun.xu",
+            "email": "shauns.xu@chofn.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
 }
