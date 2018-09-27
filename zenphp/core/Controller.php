@@ -28,7 +28,6 @@ class Controller extends Core
      */
     private function setTemplate(){
         if($this->smarty == null){
-            require_once (__DIR__.'/../smarty/libs/Smarty.class.php');
             $this->smarty = new \Smarty();
             $templateDir = ROOT."/".$this->thisApp."/";
             $compileDir = ROOT."/data/tplCompile/";

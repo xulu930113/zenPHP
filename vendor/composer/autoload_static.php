@@ -6,9 +6,42 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66
 {
+    public static $prefixLengthsPsr4 = array (
+        'z' => 
+        array (
+            'zenphp\\' => 7,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'zenphp\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/zenphp',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App',
+        ),
+    );
+
+    public static $classMap = array (
+        'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
+        'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
+        'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
+        'SmartyException' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
+        'Smarty_Security' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_security.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66::$classMap;
 
         }, null, ClassLoader::class);
     }

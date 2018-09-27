@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'zenphp\\' => array($baseDir . '/zenphp'),
+    'App\\' => array($baseDir . '/App'),
 );

@@ -16,17 +16,11 @@ class index extends Model
             'content' => "测试".time(),
         );
         $this->getCache()->set('key',$insertData,60);
-        print_r($this->getCache()->get('key'));
-        echo "<br/>";
         $data = $this->getDB()
             ->setTable('data as tb1')
             ->setField('tb1.`id`,tb1.`content`')
             ->setLimit(5,2)
             ->select();
-//        $this->getDB()
-//            ->setTable('data')
-//            ->setData($insertData)
-//            ->insert();
-        print_r($data);
+        return $data;
     }
 }

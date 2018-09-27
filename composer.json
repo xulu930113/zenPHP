@@ -10,5 +10,13 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "smarty/smarty": "3.1.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "zenphp\\": "zenphp",
+            "App\\": "App"
+        }
+    }
 }
