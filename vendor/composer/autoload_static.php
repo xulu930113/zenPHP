@@ -28,6 +28,16 @@ class ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'PHPQRCode' => 
+            array (
+                0 => __DIR__ . '/..' . '/weijianghu/phpqrcode/lib',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
@@ -41,6 +51,7 @@ class ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66::$classMap;
 
         }, null, ClassLoader::class);

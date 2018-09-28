@@ -3,7 +3,7 @@ namespace zenphp;
 
 define("ROOT",dirname(dirname(__FILE__)));
 define("PROJECT","App");
-define("PROJECT_DIR",ROOT."/App");
+define("PROJECT_DIR",ROOT."/".PROJECT);
 /**
  *
  * @package    core
