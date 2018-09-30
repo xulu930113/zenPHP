@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'zenphp\\' => array($baseDir . '/zenphp'),
+    'OSS\\' => array($vendorDir . '/aliyuncs/oss-sdk-php/src/OSS'),
     'App\\' => array($baseDir . '/App'),
 );

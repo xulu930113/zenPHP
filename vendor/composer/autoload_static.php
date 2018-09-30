@@ -11,6 +11,10 @@ class ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66
         array (
             'zenphp\\' => 7,
         ),
+        'O' => 
+        array (
+            'OSS\\' => 4,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -21,6 +25,10 @@ class ComposerStaticInitf3778a904db7c0d2828ee8985c7b6a66
         'zenphp\\' => 
         array (
             0 => __DIR__ . '/../..' . '/zenphp',
+        ),
+        'OSS\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aliyuncs/oss-sdk-php/src/OSS',
         ),
         'App\\' => 
         array (

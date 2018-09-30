@@ -39,30 +39,21 @@ class index extends Model
      * @param $tell         //公司电话
      * @param $phone        //手机号
      * @param $email        //邮箱
+     * @param $adr          //地址
      * @return string       放回二维码图片
      */
-    function qrcode($name , $phone = "" , $tell = "" , $email = "" , $username = "" , $company = "" , $position = ""){
+    function qrcode($name , $phone = "" , $tell = "" , $email = "" , $username = "" , $company = "" , $position = "" , $adr = ""){
         $QRcode = new QRcode();
-//        $url='BEGIN:VCARD
-//        VERSION:2.1
-//        LOGO;TYPE=JPEG:'."http://crm.chaofan.wang/templates/default/images/logo.png".'
-//        FN:'.$name.'
-//        NICKNAME:'.$username.'
-//        ORG:'.$company.'
-//        TITLE:".$position."
-//        TEL;TYPE=work:'.$tell.'
-//        TEL:'.$phone.'
-//        EMAIL:'.$email.'
-//        END:VCARD';
         $url = "BEGIN:VCARD
 VERSION:3.0
 N:".$name."
 NICKNAME:".$username."
 TEL;TYPE=CELL:".$phone."
 TEL;TYPE=work:".$tell."
-EMAIL;WORK:".$email."
+EMAIL;TYPE=WORK:".$email."
 ORG:".$company."
 TITLE:".$position."
+ADR;TYPE=WORK(*):".$adr."
 END:VCARD";
         $level='M';
         $size=4;
